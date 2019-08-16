@@ -1,33 +1,49 @@
-.App {
-  text-align: center;
+/**
+ * App Component
+ */
+
+@import '~normalize.css';
+
+html,
+body,
+#root {
+  height: 100%;
+
+  background-color: #666666;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
-  pointer-events: none;
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.app {
+  height: 100%;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  flex-wrap: nowrap;
+
+  font-family: Arial, Helvetica, sans-serif;
+
+  #header {
+    flex: 0 1 100px;
+  }
+  .main {
+    flex: 1 0 200px;
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+
+    .window {
+      flex: 0 0 60%;
+    }
+    .side {
+      flex: 0 0 40%;
+      background-color: darken( #666666, 5%);
+    }
+  }
+  #footer {
+    flex: 0 1 100px;
+  }
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+h1, h2, h3, h4, h5, h6 {
+  font-weight: bold;
+  margin: 0 0 1em 0;
 }

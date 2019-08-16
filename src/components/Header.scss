@@ -1,0 +1,14 @@
+/**
+ * Header Component
+ */
+
+#header {
+    background-color: darken( #666666, 5%);
+    text-align: center;
+    color: #ffffff;
+    padding: 20px 0;
+
+    h1 {
+        margin: 0;
+    }
+}
