@@ -1,0 +1,5 @@
+export const ADD_ARTICLE = 'ADD_ARTICLE'
+
+export const START_GAME_TIMER = 'START_GAME_TIMER'
+export const TICK_GAME_TIMER = 'TICK_GAME_TIMER'
+export const STOP_GAME_TIMER = 'STOP_GAME_TIMER'

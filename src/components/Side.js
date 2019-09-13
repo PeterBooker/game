@@ -1,13 +1,13 @@
 import React from 'react'
 import './Side.scss'
 
+import Settings from '../context/Settings'
 import Stats from '../context/Stats'
 
 const Side = () => {
   return (
-    <Stats.Consumer>
-      { ({ stats, setStats }) => {
-        
+    <Settings.Consumer>
+      { ({ settings }) => {
         return (
           <aside className="side">
             <h2>Game Stats</h2>
@@ -17,7 +17,7 @@ const Side = () => {
           </aside>
         )
       } }
-    </Stats.Consumer>
+    </Settings.Consumer>
   )
 }
 
